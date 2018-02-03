@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <title>minins</title>
+</head>
+<body>
+    <div id="demo">
+        <input type="" name="" v-focus>
+    </div>  
+
+    <script type="text/javascript">
+       Vue.directive("focus",{
+        inserted: function(el){
+            el.focus();
+        }
+       })
+
+        new Vue({
+            el: "#demo",
+
+        })
+    </script>
+</body>
+</html>
